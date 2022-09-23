@@ -1,11 +1,12 @@
 $('.owl-carousel').owlCarousel({
-    loop:true,
+    loop:false,
     margin:15,
     center:true,
+    lazyLoad:true,
     nav:true,
     responsive:{
         0:{
-            items:1
+            items:1,
         },
         600:{
             items:3,

@@ -9,7 +9,7 @@ body, footer, ul, li, a, p {
 body {
     /* background-color:#fff9ee; */
     /* background-image: linear-gradient(#5be0e5, #fe9acc); */
-    background-image: linear-gradient(#5be0e5, #EDDA8D, #fe9acc);
+    background-image: linear-gradient(#5be0e5, #fe9acc);
 }
 
 /* customizando links */
@@ -185,7 +185,6 @@ footer a:hover {
     .menu {
         padding: 15px;
     }
-
 }
 
 
@@ -230,6 +229,11 @@ div.container {
 /* CSS FLEXBOX 1 LEGENDAS */
 .flex-item {
     display: grid;
+
+    padding: 5px;
+    background-color: rgba(255,0,0,0), #EDDA8D;
+    box-shadow: 5px 5px rgb(182, 230, 173);
+
 }
 
 .flex-item img {
@@ -276,9 +280,18 @@ a .quero {
 /* owl carrosel */
 
 .box-card {
-    height: 100%;
-    width: 100%;
-    display: block;
+    height: 90%;
+    width: 90%;
+    display: flex;
+
+    /* padding: 3px;
+    background-color: #000; */
+
+    /* tentativa de fazer uma shadow box daora */
+    padding: 5px;
+    background-color: rgba(255,0,0,0), #EDDA8D;
+    box-shadow: 5px 5px rgb(182, 230, 173);
+
 
     border-radius: 8px;
     cursor: pointer;
