@@ -296,13 +296,16 @@ a .quero {
     margin-bottom: 20px;
     
     font-family: 'Cormorant Garamond', serif;
-    font-weight:800;
+    font-size: larger;
 
-    /* background-color: #EDDA8D;
-    background: #edda8dd0; */
     display: block;
+    border: 10px;
     border-radius: 15px ;
     background:  #c74570;
+}
+
+#home {
+    margin-top: 30px;
 }
 
 /* owl carrosel */
