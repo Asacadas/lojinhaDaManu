@@ -1,4 +1,4 @@
-body, footer, ul, li, a, p {
+body, footer, ul, li, a, p, h4, h6, img {
     margin: 0px;
     padding: 0px;
     list-style: none;
@@ -29,7 +29,7 @@ h4 { /*legenda do carrossel */
     margin: 10px;
 }
 
-h6 { /*legenda do carrossel */
+h6 { /*legenda do carrossel eu quero */
     font-family: 'Courier New', Courier;
     text-align: center;
     margin: 4px;
@@ -55,7 +55,7 @@ header {
 }
 
 header img {
-    /* margin: 10px; */
+    width: 70px;
     padding: 30px, 40px, 50px, 10px;
     color:#5be0e5;
     /* background-color: white; */
@@ -135,6 +135,14 @@ footer a:hover {
 .menu li a {
     display: block;
     padding: 10px;
+}
+
+/* up arrow seta que leva para o topo do site */
+div.fixed {
+    position: fixed;
+    padding: 2px;
+    bottom: 60px;
+    left: 22px;
 }
 
 /* banner loja - pra ficar no centro*/
@@ -230,6 +238,7 @@ div.container {
 .flex-item {
     display: grid;
 
+    border-radius: 10px;
     padding: 5px;
     background-color: rgba(255,0,0,0), #EDDA8D;
     box-shadow: 5px 5px rgb(182, 230, 173);
@@ -250,12 +259,13 @@ div.container {
     grid-column: 1;
     grid-row: 2;
     align-self: end;
+    border-radius: 0px 0px 10px 10px;
 }
 
 /* estilo links eu quero */
 a .quero {
     color: #000;
-
+    background-color: aquamarine;
 }
 
 
@@ -277,29 +287,46 @@ a .quero {
     background: linear-gradient(to right, rgba(255,0,0,0), #EDDA8D);
 }
 
+ /* Titulos principais */
+.titulo2 {
+    text-align: center;
+    padding: 20px;
+    padding-top: 30px;
+    margin: 100px;
+    margin-bottom: 20px;
+    
+    font-family: 'Cormorant Garamond', serif;
+    font-weight:800;
+
+    /* background-color: #EDDA8D;
+    background: #edda8dd0; */
+    display: block;
+    border-radius: 15px ;
+    background:  #c74570;
+}
+
 /* owl carrosel */
 
 .box-card {
-    height: 90%;
-    width: 90%;
-    display: flex;
+    height: 100%;
+    width: 100%;
+    display: block;
 
     /* padding: 3px;
     background-color: #000; */
 
     /* tentativa de fazer uma shadow box daora */
+    margin: 5px;
     padding: 5px;
     background-color: rgba(255,0,0,0), #EDDA8D;
-    box-shadow: 5px 5px rgb(182, 230, 173);
-
+    box-shadow: 6px 6px rgb(182, 230, 173);
 
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.conteudo_esquerdo {
-    height: 100px;
-    width: 200px;
-    float: left;
+.owl-carousel .owl-item img {
+    display: block;
+    width: 90%;
 }
